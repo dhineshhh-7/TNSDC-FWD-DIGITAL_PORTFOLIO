@@ -1,0 +1,12 @@
+// Back to top button show/hide
+const backToTop = document.querySelector('.back-to-top');
+window.addEventListener('scroll', () => {
+    backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
+// Mobile menu toggle
+const menuIcon = document.querySelector('.menu-icon');
+const navMenu = document.querySelector('nav ul');
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
